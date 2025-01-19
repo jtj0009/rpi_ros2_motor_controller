@@ -1,0 +1,14 @@
+[package]
+name = "motor_controller"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+rclrs = "*"      # or whichever version matches your ROS 2 distro
+geometry_msgs = "5.3.5"
+sensor_msgs = "5.3.5"
+rppal = "0.14.0"      # for Raspberry Pi I2C
+
+[patch.crates-io]
+geometry_msgs = { path = "/home/pi/Documents/workspace/install/geometry_msgs/share/geometry_msgs/rust" }
+sensor_msgs = { path = "/home/pi/Documents/workspace/install/sensor_msgs/share/sensor_msgs/rust" }
