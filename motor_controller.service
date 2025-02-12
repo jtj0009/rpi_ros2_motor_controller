@@ -1,0 +1,14 @@
+[Unit]
+Description=Rust Motor Controller
+After=network.target
+
+[Service]
+Type=simple
+User=root
+
+ExecStart=/bin/bash /home/pi/Documents/motor_controller/start_controller.sh
+
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
