@@ -73,6 +73,8 @@ ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.1}, angular: {z:
 
 ros2 topic echo /battery sensor_msgs/msg/BatteryState
 
+ros2 topic echo /cmd_vel geometry_msgs/msg/Twist
+
 ## Troubleshooting
 
 No I²C device found:
